@@ -83,8 +83,13 @@
         }
 
         section ul {
-            list-style-type: disc; /* Changed list-style-type */
-            margin-left: 20px; /* Adjusted margin for unordered lists */
+            list-style-type: none; /* Removed bullet points */
+            padding: 0; /* Removed default padding */
+            margin: 0; /* Removed default margin */
+        }
+
+        section ul li {
+            margin-bottom: 10px; /* Added space between list items */
         }
 
         footer {
@@ -138,7 +143,7 @@
 </head>
 <body>
     <header>
-        <h1>Devadakshan Venkatesan Rajamanickam</h1>
+        <h1>Devadakshan Venkatesan</h1>
         <p>Final Year Computer Science Student and Aspiring IT Professional</p>
         <nav>
             <span class="menu-toggle" onclick="toggleMenu()">☰</span>
