@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devadakshan Venkatesan - Portfolio</title>
+    <meta name="description" content="Portfolio of Devadakshan Venkatesan, a final year Computer Science student and aspiring IT professional.">
+    <meta name="keywords" content="Devadakshan Venkatesan, portfolio, computer science, IT professional, projects, skills, certifications, extracurricular activities">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your CSS styles here */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2C3E50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            position: absolute;
+            top: 25px;
+            right: 20px;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #2C3E50;
+            padding-bottom: 10px;
+            font-size: 2em;
+            margin-bottom: 20px; /* Added margin-bottom for better separation */
+        }
+
+        section p {
+            margin-bottom: 10px; /* Adjusted margin for paragraphs */
+        }
+
+        section ul {
+            list-style-type: disc; /* Changed list-style-type */
+            margin-left: 20px; /* Adjusted margin for unordered lists */
+        }
+
+        footer {
+            background-color: #2C3E50;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+        }
+
+        a {
+            color: #2C3E50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                display: none;
+                margin: 10px 0 0;
+            }
+
+            nav ul.showing {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Devadakshan Venkatesan</h1>
+        <p>Final Year Computer Science Student and Aspiring IT Professional</p>
+        <nav>
+            <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#activities">Extracurricular</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Contact Information</h2>
+        <p>Phone: +91 9150466388</p>
+        <p>Email: <a href="mailto:devadakshan2002@gmail.com">devadakshan2002@gmail.com</a></p>
+        <p>Location: Vellore, Tamil Nadu, India</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/devadakshan" target="_blank">www.linkedin.com/in/devadakshan</a></p>
+        <p>GitHub: <a href="https://github.com/Devadakshan-Venkatesan" target="_blank">github.com/Devadakshan-Venkatesan</a></p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>I am a final year Computer Science student at Vellore Institute of Technology, Vellore, Tamil Nadu, India. I am passionate about technology and aspire to become a proficient IT professional.</p>
+        <h3>Education</h3>
+        <ul>
+            <li>B.Tech in Computer Science and Engineering, 2024 - Vellore Institute of Technology, Vellore, Tamil Nadu, India (CGPA: 7.53)</li>
+            <li>Class XII, 2020 - Indian Excellent School, Sharjah, UAE (Percentage: 82.4%)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>AI-Powered Subtitle Generator:</strong> Developed an AI-powered subtitle generator using Python, integrating AssemblyAI for speech-to-text conversion and MoviePy for video processing. Built a GUI with Tkinter and CustomTkinter.</li>
+            <li><strong>Online Medicine Ordering System:</strong> Developed a comprehensive online medicine ordering system using HTML and PHP, enabling users to sign up, log in, search for medicines, place orders, and manage their order history. Features user authentication, database connections, and search functionality.</li>
+            <li><strong>HandyManServices Project:</strong> Developed a Java-based application for managing handyman services with features for user authentication, service request management, order processing, and payment handling. Integrated with MySQL using JDBC.</li>
+            <li><strong>News Article Summarizer Web Application:</strong> Developed a Flask-based web app for summarizing news articles using Pegasus (abstractive) and Spacy (extractive) techniques. Implemented content extraction with Newspaper3k.</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> C and C++, Java, Python, PHP</li>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Database Management:</strong> MySQL</li>
+            <li><strong>Tools and Technologies:</strong> Git and GitHub, Excel and MS Office tools</li>
+            <li><strong>Soft Skills:</strong> Good Communication, Team Leadership, Time management and prioritization, Analytical thinking, problem-solving, and decision-making</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Data Structures and OOP with C++ - OCSALY Academy (Udemy), March 2023</li>
+            <li>JavaScript - Infosys Springboard, September 2023</li>
+            <li>Typing Certificate 53 wpm - RATA Type, June 9, 2024</li>
+            <li>SC-900: Microsoft Security, Compliance, and Identity Fundamentals - Microsoft, July 2023</li>
+        </ul>
+    </section>
+
+    <section id="activities">
+        <h2>Extracurricular Activities</h2>
+        <ul>
+            <li>Participated in the Service to the Society program during the 2nd year.</li>
+            <li>Member of the Computer Science Club during Class 12.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('showing');
+        }
+    </script>
+</body>
+</html>
